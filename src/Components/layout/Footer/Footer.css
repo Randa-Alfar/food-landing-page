@@ -1,0 +1,77 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+}
+.footer-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--yellow);
+    padding: 2rem;
+    background-image: url('../../../assets/burger-french-revers.jpg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right;
+    color: var(--burgundy);
+    font-weight: 800;
+}
+.footer-top>ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-self: center;
+}
+.footer-top>ul>li{
+    display: flex;
+    gap: 2rem;
+}
+.footer-top>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    gap:3rem;
+    font-style: italic;
+}
+.footer-top>div>span:nth-of-type(1){
+    font-size: 2rem;
+    font-weight: 600;
+}
+.footer-top>div>span:nth-of-type(2){
+    width: 70%;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.footer-copyright{
+    display: flex;
+    justify-content: center;
+    color: var(--gray);
+    background-color: var(--darkgray);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 900px) {
+    
+    .footer-top{
+        flex-wrap: wrap;
+        background-size: 150%;
+    }
+    .footer-top>div>span:nth-of-type(2){
+        width: 100%;
+        
+    }
+}
+@media screen and (max-width: 400px) {
+    .footer-container{
+        padding-top: 3rem;
+    }
+    .footer-copyright{
+        font-size: 0.7rem;
+        padding: 0.3rem;
+    }
+}

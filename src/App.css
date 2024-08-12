@@ -1,38 +1,54 @@
+:root {
+  --blue:#016588;
+  --lightblue:#cce0e7;
+  --lightgray:#f0f1f1;
+  --yellow:#ffb400;
+  --orange:#ff7800;
+  --red:#ff3d00;
+  --burgundy:#ab164d;
+  --darkgray:#333333;
+  --gray:#666666;
+  --planCard: linear-gradient(210.41deg, #009999 1.14%, #000099 100.75%);
+  --planCard2: linear-gradient(210.41deg, #000099 1.14%, #262626 100.75%);
+  --gradiant:linear-gradient(270deg, rgba(55,55,55,1) 0%, rgba(0,0,0,1) 100%);
+}
+@font-face {
+  font-family: "Robot";   /*Can be any text*/
+  src: local("Roboto"),
+    url("../src/font/Roboto/Roboto-Regular.ttf") format("truetype");
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  mix-blend-mode: overlay;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-family: "Robot"; 
+  
+}
+.btn{
+  border: none;
+  background-color: var(--yellow);
+  padding: 0.7rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 1.5rem;
+  width: 9rem;
+  display: flex;
+  gap: 0.5rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* to make img and span in the same line */
+  align-items: center;
+}
+/* text-link is uesed to remove style from <Link> tag
+   so you can just add this class to it <3
+*/
+.text-link {
+  color: inherit;
+  text-decoration: inherit;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+

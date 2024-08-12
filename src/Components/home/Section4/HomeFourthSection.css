@@ -1,0 +1,123 @@
+.home-section4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: -24rem;
+}
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.menu-container>span:nth-of-type(1){
+    font-weight: 600;
+}
+.menu-container>span:nth-of-type(2){
+    font-size: 2rem;
+    font-weight: 600;
+}
+.meals-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: start;
+    width: 60%;
+    gap: 1rem;
+    flex:4;
+}
+.meals-card{
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+    height: 14rem;
+    padding: 0.5rem;
+    border: 1px solid var(--lightgray); 
+    border-radius: 0.5rem;
+    gap: 1rem;
+    transition: background-color 1s;
+}
+.meals-card:hover{
+    background-color: var(--burgundy);
+    background-image: linear-gradient(to bottom right, var(--red), var(--yellow));
+}
+.meals-card>:first-child{
+    align-self: center;
+}
+.meals-card>img{
+    width: 6rem;
+    height: 6rem;
+}
+.meals-card>div:nth-of-type(1){
+    display: flex;
+    
+    flex-direction: column;
+}
+.meals-card>div:nth-of-type(1)>span:nth-of-type(1){
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.meals-card>div:nth-of-type(1)>span:nth-of-type(2){
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.meals-card>div:nth-of-type(1)>span:nth-of-type(3){
+    color: var(--burgundy);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+.meals-card>div:nth-of-type(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.meals-card>div:nth-of-type(2)>span{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.meals-card>div:nth-of-type(2)>button{
+    width: 4rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    height: 1.9rem;
+    background-color: var(--burgundy);
+    color:white
+}
+.meals-card>div:nth-of-type(2)>button:hover{
+    background-color: white;
+    color: var(--burgundy);
+    cursor: pointer;
+}
+.btn-seefood{
+    align-items: center;
+    width: 10rem;
+    background-color: white;
+    border: 1px solid var(--burgundy);
+}
+.btn-seefood:hover{
+    color: var(--burgundy);
+    cursor: pointer;
+}
+.btn-seefood>span{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.btn-seefood>img{
+    width: 0.8rem;
+}
+
+@media screen and (max-width: 900px) {
+    .meals-container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+}

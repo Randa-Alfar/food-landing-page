@@ -1,0 +1,116 @@
+.home-section1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 6rem;
+}
+.both-side{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 2rem;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 80%;
+}
+.left-side{
+    display: flex;
+    width: 30%;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+
+}
+.side-img{
+    background-image: url('../../../assets/home_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 5% 55%;
+    background-size: 40rem;
+    height: 30rem;
+    width: 50rem;
+    z-index: -1;
+}
+.order-fav-container{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    
+}
+.order-fav-container>span:nth-of-type(1){
+    font-size: 3rem;
+    font-weight: 500;
+    width: 50%;
+}
+.order-fav-container>span:nth-of-type(2){
+    font-size: 1.1rem;
+    width: 28%;
+}
+.btn-sevtion1{
+    transition: 0.4s background-color ,color;
+}
+.btn-sevtion1>span{
+    font-weight: 600;
+}
+.btn-sevtion1>img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.btn-sevtion1:hover{
+    background-color: var(--blue);
+    color: var(--lightblue);
+}
+.features-container{
+    display: flex;
+    gap: 2rem;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.features-container>div{
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+
+
+@media screen and (max-width: 900px) { 
+    .home-section1{
+        padding-left: 0;
+    }
+    .order-fav-container{
+        padding-left: 1rem;
+    }
+    .order-fav-container>span:nth-of-type(1){
+        width: 90%;
+    }
+    .order-fav-container>span:nth-of-type(2){
+        width: 90%;
+    }
+    .features-container{
+        width: 90%;
+        padding-left: 1rem;
+    }
+    
+    
+ }
+
+ @media screen and (max-width: 400px) { 
+    .home-section1{
+        gap:2rem;
+    }
+    .features-container{
+        flex-direction: column;
+    }
+    .order-fav-container>span:nth-of-type(1){
+        width: 100%;
+    }
+    .order-fav-container>span:nth-of-type(2){
+        width: 90%;
+    }
+    
+    
+ }
